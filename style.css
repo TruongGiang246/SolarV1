@@ -1,0 +1,541 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.title{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    font-family: sans-serif;
+}
+.title p{
+    margin-top: 5px;
+    color: white;
+}
+html{
+  background-image: url('./images/background_pc.gif');
+  background-color: contain;
+  width: 100vw;
+  height: 100vh;
+}
+#universe{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}  
+.sun{
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 3;
+  margin: 100px auto;  
+  animation-name: space-all;
+  animation-duration: 10s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 0 0 30px 30px rgba(255,140,0, 0.6);
+  transition-duration: 2s; 
+ 
+}
+ @keyframes space-all{
+   from  {transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+} 
+@keyframes earth{
+   from  {transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+@keyframes moon{
+   from  {transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+.Mecury-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Mecury{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 15px;
+  animation-name: space-all;
+  animation-duration: 3s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s; 
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(128,128,128, 0.5);
+}
+
+.Venus-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 2.5s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Venus{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 15px;
+  animation-name: space-all;
+  animation-duration: 10s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s; 
+    border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px rgba(255,140,0, 0.8);
+}
+
+.earth-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 4s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position:absolute;
+}
+.earth{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 60px;
+  animation-name: space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  transition-duration: 2s; 
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(220,220,220, 0.7);
+}
+
+ .moon-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: space-all;
+  animation-duration: 1s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  left: 50px;
+  top: -10px;
+} 
+.moon{
+  width: 15px;
+  height: 15px;
+  animation-name:  space-all;
+  animation-duration: 1s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  animation-timing-function: linear;
+  transition-duration: 2s; 
+}
+.Mars-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 3.5s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Mars{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 100px;
+  animation-name:  space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s; 
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(255,0,0, 0.5);
+}
+.Jupiter-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 15s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Jupiter{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 80px;
+  animation-name:  space-all;
+  animation-duration: 1s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(222,184,135, 0.5);
+}
+.Staturn-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 20s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Staturn{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 200px;
+  animation-name:  space-all;
+  animation-duration: 3s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 1s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(245,222,179, 0.5);
+}
+
+.ring{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: space-all;
+  animation-duration: 10s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  left: 170px;
+  top: -30px;
+  z-index: -1;
+  opacity: 0.8;
+  transition-duration: 2s;
+}
+.Uranus-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 30s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Uranus{
+  width: 75px;
+  height: 75px;
+  position: relative;
+  left: 350px;
+  animation-name:  space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(176,224,230, 0.7);
+}
+.Neptune-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 1500px;
+  height: 1500px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 35s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Neptune{
+  width: 75px;
+  height: 75px;
+  position: relative;
+  left: 480px;
+  animation-name:  space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(30,144,255, 0.6);
+}
+.Pluto-orbit{
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  width: 1800px;
+  height: 1800px;
+  border-radius: 50%;
+  animation-name: space-all;
+  animation-duration: 35s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  margin: 300px auto;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+.Pluto{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 750px;
+  animation-name:  space-all;
+  animation-duration: 2s;
+  animation-direction: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 2s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(245,222,179, 0.6);
+}
+.button{
+  width: 200px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 30px;
+  transition-duration: 1s;
+  opacity: 0.5;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  visibility: hidden; 
+  margin: 10px;
+}
+.hello{
+  width: 130px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 50px;
+  opacity: 0.5;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  z-index: 10;
+  margin-bottom: 10%;
+  position:fixed;
+  bottom: -140px;
+  right: 150px;
+}
+.hello2{
+  width: 130px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 50px;
+  opacity: 0.5;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  z-index: 10;
+  margin-bottom: 10%;
+  position:fixed;
+  bottom: -140px;
+  right: 10px;
+}
+.act{
+  width: 600px;
+  height: 500px;
+  border: 3px solid white;
+  border-radius: 10px;
+  position:fixed;
+  bottom: 200px;
+  left: 150px;
+  z-index: 5;
+  opacity: 1;
+  color: white;
+  overflow: scroll;
+}
+.acti{
+  visibility: visible;
+  position: fixed;
+  left: 200px;
+  z-index: 4;
+  opacity: 1;
+}
+.cover{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  width: 2000px;
+  height: 2000px;
+  z-index: 1;
+}
+.active {
+  width: 400px;
+  height: 400px;
+  position:fixed;
+  left: 65%;
+  bottom: 30%;
+  z-index: 5;
+  top: 10%;
+}
+.container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 70%;
+}
+.conacc{
+  position: relative;
+}
+.acc{
+  animation: none;
+}
+.on{
+  visibility: visible;
+}
+.info{
+  display:none;
+  opacity: 0;
+  transition-duration: 3s;
+}
+.show{
+  display: inline;
+  visibility: visible;
+  opacity: 1;
+  line-height: 2px;
+  font-size: 20px;
+  text-align: left;
+}
+p{
+  text-align: center;
+  color: white;  
+  margin-top: 100px;
+  opacity: 0.5;
+  font-family: arial;
+}
+
+@media screen and (max-width: 1024px){
+  .hello{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 20%;
+    left: 18%;
+    font-size: 25px;
+  }
+  .hello2{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 20%;
+    left: 4%;
+    font-size: 25px;
+  }
+  .active{
+    height: 350px;
+    width: 350px;
+    position: fixed;
+    top: 0.2%;
+    left: 3%;
+  }
+  .button{
+    width: 120px;
+    height: 70px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  .act{
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    top: 25%;
+    left: 0.1%;
+  }
+  .container{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 400px;
+    top: 22%;
+    left: 0.2%;
+  }
+  .conacc{
+  position: relative;
+}
+html{
+  background-image: url('./images/background_mobile.webp');
+  background-color: contain;
+  width: 100vw;
+  height: 100vh;
+}
+}
